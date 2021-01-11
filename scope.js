@@ -1,19 +1,20 @@
 console.log(x);
-show();
+show( 11110 );
 var x  = 10;
 console.log(x);
 
-function show() {
+function show( count ) {
     console.log(x);
     x = 5;
-    console.log(x);
+    console.log(count);
+    // y = 50;
+    // console.log(y);
 }
 
-
-// GlobalScope - x(10) show(with body);
+// GlobalScope - x(5) show(with body)
 // undefined
-// showScope - nothing
-// uindefined
+// showScope - count(11110)
+// undefined
 // 5
 // 10
 
